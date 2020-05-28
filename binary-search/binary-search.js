@@ -2,7 +2,14 @@
 
 // Complete this algo
 const binarySearch = (array, target) => {
-	
+  if (new Set(array).size !== array.length) {
+    return 'duplicates are found';
+  }
+  if (array.includes(target)) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 /*
@@ -14,4 +21,4 @@ const binarySearch = (array, target) => {
 
 */
 
-module.exports = binarySearch
+module.exports = binarySearch;
